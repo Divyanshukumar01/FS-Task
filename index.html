@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Timetable</title>
+  </head>
+  <body>
+    <table style=" width:80%;height: 500px; border-style: solid" border="2px">
+       <tr>
+        <th colspan=" 6",text-decoration: solid; text-align: center;">Timetable</th></tr>
+      <tr>
+        <th >Hours</th>
+        <th>Monday</th>
+        <th>Tuesday</th>
+        <th>wednesday</th>
+        <th>Thursday</th>
+        <th>Friday</th>
+      </tr>
+      <tr>
+        <td>8:00 AM - 9 :00 PM</td>
+        <td onclick="details('Science')">Science</td>
+        <td onclick="details('Maths')">Maths</td>
+        <td onclick="details('English ')">English</td>
+        <td onclick="details('Science')"> Science</td>
+        <td onclick="details('Arts')">Arts</td>
+      </tr>
+      <tr>
+        <td>9:00 AM - 10:00 AM</td>
+        <td onclick="details('Social')">Social</td>
+        <td onclick="details('Hindi')">Hindi</td>
+        <td onclick="details('English')">English</td>
+        <td onclick="details('Arts')">Arts</td>
+        <td onclick="details('Sports')">Sports</td>
+      </tr>
+      <tr>
+        <td>10:00 AM - 12:00 PM </td>
+        <td onclick="details('Science')">Science</td>
+        <td onclick="details('Maths')">Maths</td>
+        <td onclick="details('Hindi')">Hindi</td>
+        <td onclick="details('English')">English</td>
+        <td onclick="details('Arts')">Arts</td>
+      </tr>
+      
+      <tr>
+        <th>12:00 PM - 1:00 PM</th>
+        <th colspan="5">Lunch</th>
+      </tr>
+      <tr>
+        <td>1:00 PM - 2:00 PM</td>
+        <td onclick="details('Maths')">Maths</td>
+        <td onclick="details('Maths')">Maths</td>
+        <td onclick="details('Sports')">Sports</td>
+        <td onclick="details('English')">English</td>
+        <td onclick="details('Hindi')">Hindi</td>
+      </tr>
+      
+      <tr>
+        <td>2:00 PM - 3:00 PM </td>
+        <td rowspan="2" onclick="details('Project')">Project</td>
+        <td onclick="details('Maths')">Maths</td>
+        <td onclick="details('English')">English</td>
+        <td onclick="details('Science')">Science</td>
+        <td onclick="details('Hindi')">Hindi</td>
+      </tr>
+      <tr>
+        <td>3:00 PM - 4:00 PM</td>
+        <td onclick="details('Science')">Science</td>
+        <td onclick="details('Science')">Xtra class</td>
+        <td onclick="details('Hindi')">Hindi</td>
+        <td onclick="details('Arts')">Arts</td>
+      </tr>
+      
+    </table>
+    <script>
+      function details(subject) {
+          switch(subject) {
+              case 'Science':
+                  window.location.href = 'Science.html'; 
+                  break;
+              case 'Maths':
+                  window.location.href = 'Maths.html';
+                  break;
+              case 'English':
+                  window.location.href = 'English.html'; 
+                  break;
+              case 'Social':
+                  window.location.href = 'Social.html';
+                  break;
+              case 'Hindi':
+                  window.location.href = 'Hindi.html'; 
+                  break;
+              case 'Sports':
+                  window.location.href = 'Sports.html'; 
+                  break;
+              case 'Project':
+                  window.location.href = 'Project.html'; 
+                  break;
+              case 'Arts':
+                  window.location.href = 'Arts.html'; 
+                  break;
+              default:
+                  alert('Teacher details not found.');
+          }
+      }
+  </script>
+  </body>
+</html>
